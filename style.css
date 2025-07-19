@@ -71,13 +71,11 @@ nav {
     height: 80px;
 }
 
-.logo {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 24px;
-    color: var(--text-color);
-    text-decoration: none;
+.logo img {
+    height: 40px; /* Atur tinggi logo di sini, 40px biasanya pas */
+    width: auto; /* Biar lebar otomatis menyesuaikan & gambar gak gepeng */
+    display: block; /* Mencegah spasi aneh di bawah gambar */
 }
-.logo span { color: var(--primary-color); }
 
 .nav-links {
     list-style: none;
