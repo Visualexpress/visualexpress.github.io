@@ -72,7 +72,7 @@ nav {
 }
 
 .logo img {
-    height: 500px; /* Atur tinggi logo di sini, 40px biasanya pas */
+    height: 200px; /* Atur tinggi logo di sini, 40px biasanya pas */
     width: auto; /* Biar lebar otomatis menyesuaikan & gambar gak gepeng */
     display: block; /* Mencegah spasi aneh di bawah gambar */
 }
