@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Express - Desain Cepat, Kualitas Hebat</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header>
+<header>
         <div class="container">
             <nav>
                 <a href="#" class="logo">VisualExpress<span>.</span></a>
@@ -21,7 +8,7 @@
                     <li><a href="#portfolio">Karya</a></li>
                     <li><a href="#contact" class="contact-button">Kontak</a></li>
                 </ul>
-                <div class="menu-toggle">
+                 <div class="menu-toggle">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -31,77 +18,150 @@
     </header>
     <main>
         <section id="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Bikin Brand Lo Naik Kelas, <br>Secepat Kilat.</h1>
-                    <p>Dari logo sampai konten sosmed, kami siap bantu visual brand lo jadi pusat perhatian. Desain kece, gak pake lelet.</p>
-                    <a href="#portfolio" class="cta-button">Lihat Karya Kita 🚀</a>
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Bikin Desain? Nggak Pake Ribet.</h1>
+                    <p>Urusan visual serahin ke kita. Cepat, tepat, dan hasilnya dijamin nampol. Welcome to the future of design service!</p>
+                    <a href="#services" class="cta-button">Lihat Layanan 🚀</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://www.reshot.com/preview-assets/illustrations/Y6K8PZ/a-team-of-designers-working-on-a-project-Y6K8PZ-original.png" alt="Ilustrasi Tim Desain">
                 </div>
             </div>
         </section>
-        <section id="services">
-            <div class="container">
-                <h2>Layanan Andalan Kami</h2>
-                <div class="service-cards">
-                    <div class="card">
-                        <h3>Branding & Logo</h3>
-                        <p>Bikin identitas brand yang kuat dan logo yang nempel di kepala orang.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Konten Sosial Media</h3>
-                        <p>Desain feed Instagram, TikTok, atau Facebook yang estetik dan engaging.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Desain Grafis Lainnya</h3>
-                        <p>Poster, brosur, banner, atau apa pun yang lo butuhin, kita sikat!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio">
-            <div class="container">
-                <h2>Karya Terbaik Pilihan</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item"><img src="https://via.placeholder.com/500x500.png?text=Karya+1" alt="Portfolio 1"></div>
-                    <div class="portfolio-item"><img src="https://via.placeholder.com/500x500.png?text=Karya+2" alt="Portfolio 2"></div>
-                    <div class="portfolio-item"><img src="https://via.placeholder.com/500x500.png?text=Karya+3" alt="Portfolio 3"></div>
-                    <div class="portfolio-item"><img src="https://via.placeholder.com/500x500.png?text=Karya+4" alt="Portfolio 4"></div>
-                </div>
-                 <a href="#" class="cta-button-secondary">Lihat Semua Karya</a>
-            </div>
-        </section>
-        <section id="testimonial">
-            <div class="container">
-                <blockquote>
-                    "Gila, servicenya sat-set banget! Desainnya juga modern dan pas sama kemauan gue. Visual Express beneran penyelamat deadline."
-                </blockquote>
-                <cite>- Mahasiswa Tingkat Akhir</cite>
-            </div>
-        </section>
-        </main>
+        ```
 
-    <footer id="contact">
-        <div class="container">
-            <h2>Tertarik Kolaborasi?</h2>
-            <p>Langsung aja follow dan DM kita buat order!</p>
-            <div class="social-links">
-                <a href="https://instagram.com/visualexpressid" target="_blank">➡️ IG: @visualexpressid</a>
-                <a href="https://tiktok.com/@visualexpress.id" target="_blank">➡️ TikTok: @visualexpress.id</a>
-            </div>
-            <div class="copyright">
-                &copy; 2025 VisualExpress. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-    <script>
-        // Script buat menu di mobile
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
+#### **Kode Baru `style.css`**
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-    </script>
-</body>
-</html>
+Ini bagian penting. Kita akan ubah total palet warnanya dan styling Hero Section. Hapus semua CSS lama, dan ganti dengan ini untuk sementara (atau edit bagian-bagian yang relevan).
+
+```css
+/* ===== GENERAL & SETUP ===== */
+:root {
+    /* INI PALET WARNA BARU KITA */
+    --primary-color: #F0A500; /* Kuning Kece, tetep kita pake */
+    --secondary-color: #1E1E1E; /* Warna teks utama (Hitam) */
+    --bg-color: #FDF8F0; /* Warna background (Krem/Off-white) */
+    --card-bg-color: #FFFFFF; /* Warna putih untuk kartu/elemen */
+    --text-color: #1E1E1E;
+    --text-secondary: #555555; /* Abu-abu buat teks sekunder */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color); /* Latar belakang baru */
+    color: var(--text-color); /* Warna teks default baru */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ... (Kode h1, h2, p, dll biarkan sama atau sesuaikan nanti) ... */
+h1 { font-size: 3.5rem; line-height: 1.2; }
+h2 { font-size: 2.5rem; text-align: center; margin-bottom: 20px;}
+p { color: var(--text-secondary); line-height: 1.6; }
+section { padding: 100px 0; }
+
+
+/* ===== NAVBAR (Dengan sedikit penyesuaian) ===== */
+header {
+    background-color: rgba(253, 248, 240, 0.8); /* Background baru yg agak transparan */
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo { color: var(--text-color); }
+.logo span { color: var(--primary-color); }
+.nav-links a { color: var(--text-color); }
+.nav-links a:hover { color: var(--primary-color); }
+.contact-button {
+    background-color: var(--primary-color);
+    color: var(--text-color) !important;
+}
+.contact-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--card-bg-color) !important;
+}
+.menu-toggle div { background-color: var(--text-color); }
+
+
+/* ===== HERO SECTION BARU ===== */
+#hero {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: var(--bg-color); /* Hapus background gambar, kita pake warna solid */
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1; /* Ambil space sebanyak mungkin */
+    max-width: 500px;
+}
+.hero-text h1 { color: var(--text-color); }
+.hero-text p { margin: 20px 0 30px 0; }
+.cta-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===== RESPONSIVE UNTUK HERO SECTION ===== */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Tumpuk ke bawah di mobile */
+        text-align: center;
+    }
+    .hero-text {
+        order: 2; /* Teks di bawah gambar */
+    }
+    .hero-image {
+        order: 1; /* Gambar di atas teks */
+        margin-bottom: 30px;
+    }
+    h1 { font-size: 2.5rem; }
+}
