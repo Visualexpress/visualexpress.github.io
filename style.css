@@ -1,0 +1,58 @@
+/* Atur font dasar dan hapus margin default dari browser */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+/* Styling untuk Header (pembungkus navbar) */
+header {
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+/* Styling untuk Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Styling untuk Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Styling untuk list menu (wadah <ul>) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+/* Styling untuk tiap link menu */
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+/* Efek pas mouse nyentuh link menu */
+.nav-links a:hover {
+    color: #f0a500;
+}
+/* Styling khusus untuk tombol Kontak */
+.contact-button {
+    background-color: #f0a500;
+    color: #121212;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.contact-button:hover {
+    background-color: #ffffff;
+    color: #121212 !important;
+}
