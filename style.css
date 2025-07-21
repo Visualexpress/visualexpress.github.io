@@ -169,37 +169,57 @@ nav {
     margin: 0 auto 20px auto;
 }
 
-/* ===== STATS COUNTER SECTION (BARU!) ===== */
+/* ===== STATS COUNTER SECTION (REVISI) ===== */
 #stats {
-    background-color: var(--primary-color);
     padding: 60px 0;
 }
 
 .stats-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
+    justify-content: center; /* Posisi di tengah */
+    align-items: flex-start;
+    gap: 80px; /* Jarak antar item */
 }
 
 .stat-item {
-    text-align: center;
-    transform: rotate(-2deg); /* Efek miring biar playful */
+    text-align: left;
+    max-width: 250px;
+}
+
+.stat-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.stat-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+}
+
+.stat-title h3 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.stat-line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--border-color);
+    margin-bottom: 10px;
 }
 
 .stat-item .counter {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 4rem; /* Ukuran angka */
+    font-size: 3.5rem;
     color: var(--text-color);
     line-height: 1;
 }
-
-.stat-item p {
-    font-weight: 600;
-    color: var(--text-color);
-    margin-top: 5px;
-}
-
 
 /* ===== SERVICES SECTION ===== */
 .services-container {
@@ -254,3 +274,16 @@ footer p { color: #ccc; }
     }
     .nav-links.active { transform: translateX(0); }
     .menu-toggle { display: flex; flex-direction: column; gap: 5px; cursor: pointer; }
+    .menu-toggle div { width: 25px; height: 3px; background-color: var(--text-color); transition: all 0.3s; }
+    .menu-toggle.active div:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .menu-toggle.active div:nth-child(2) { opacity: 0; }
+    .menu-toggle.active div:nth-child(3) { transform: rotate(-45deg) translate(7px, -8px); }
+
+    /* Section Stacking */
+    .hero-container, .services-container { flex-direction: column; text-align: center; }
+    .services-container .services-image { order: -1; margin-bottom: 30px; }
+    .hero-text, .hero-image, .services-text, .services-image { max-width: 100%; }
+    .steps-container { flex-direction: column; }
+    .stats-container { flex-direction: column; align-items: center; gap: 40px; }
+    .stat-item { text-align: center; }
+}
