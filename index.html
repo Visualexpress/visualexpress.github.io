@@ -80,4 +80,81 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-title">
-                        <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2
+                        <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V6h5.17l2 2H20v10z"/></svg>
+                        <h3>Orderan</h3>
+                    </div>
+                    <div class="stat-line"></div>
+                    <div class="counter" data-target="127">0</div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container services-container">
+                <div class="services-image">
+                    <img src="https://ik.imagekit.io/yodaproduction/grup-3-1_zXkM513s2.png?updatedAt=1710922849318" alt="Ilustrasi Layanan Desain">
+                </div>
+                <div class="services-text">
+                    <h2>Mulai dari Branding, Konten Sosmed, Sampe Tugas Kuliah.</h2>
+                    <p>Apapun kebutuhan visual lo, kita siap bantu. Mau bikin logo buat brand rintisan? Bikin feed Instagram auto-kece? Atau sekadar butuh bantuan buat presentasi biar dosen terkesima? Kita solusinya.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-container">
+            <h2>Udah Siap Bikin Gebrakan?</h2>
+            <p>Gak usah nunggu lama. Yuk, ngobrol santai sama kita sekarang!</p>
+            <div class="footer-cta">
+                 Langsung aja follow dan DM kita buat order! ➡️ IG: @visualexpressid ➡️ TikTok: @visualexpress.id
+            </div>
+            <div class="copyright">
+                &copy; 2025 VisualExpress. Dibuat dengan semangat ☕
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Script untuk counter angka
+        const counters = document.querySelectorAll('.counter');
+        const statsSection = document.querySelector('#stats');
+
+        const startCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            let current = 0;
+            const increment = target / 150; // Kecepatan counter
+
+            const updateCounter = () => {
+                if (current < target) {
+                    current += increment;
+                    counter.innerText = Math.ceil(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCounter();
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    counters.forEach(startCounter);
+                    observer.unobserve(entry.target); // Hanya jalankan sekali
+                }
+            });
+        }, { threshold: 0.5 }); // Muncul saat 50% section terlihat
+
+        observer.observe(statsSection);
+
+        // Script buat menu di mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
