@@ -2,7 +2,7 @@
 :root {
     --primary-color: #F0A500;
     --secondary-color: #1E1E1E;
-    --bg-color: #FDF8F0;
+    --bg-color: #FFFFFF; /* WARNA BARU JADI PUTIH BERSIH */
     --card-bg-color: #FFFFFF;
     --text-color: #1E1E1E;
     --text-secondary: #555555;
@@ -54,7 +54,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 
 /* ===== NAVBAR ===== */
 header {
-    background-color: rgba(253, 248, 240, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* Disesuaikan dengan background putih */
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -139,7 +139,7 @@ nav {
 }
 
 /* ===== HOW IT WORKS SECTION ===== */
-#how-it-works { background-color: var(--card-bg-color); }
+#how-it-works { background-color: #FAFAFA; } /* sedikit abu-abu biar beda */
 #how-it-works h2 { margin-bottom: 60px; }
 
 .steps-container {
@@ -169,7 +169,7 @@ nav {
     margin: 0 auto 20px auto;
 }
 
-/* ===== STATS COUNTER SECTION (REVISI) ===== */
+/* ===== STATS COUNTER SECTION ===== */
 #stats {
     padding: 60px 0;
 }
