@@ -287,3 +287,32 @@ footer p { color: #ccc; }
     .stats-container { flex-direction: column; align-items: center; gap: 40px; }
     .stat-item { text-align: center; }
 }
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+.whatsapp-fab {
+    position: fixed; /* Biar nempel terus di layar */
+    width: 60px;
+    height: 60px;
+    bottom: 30px; /* Jarak dari bawah */
+    right: 30px; /* Jarak dari kanan */
+    background-color: #25D366; /* Warna hijau WhatsApp */
+    color: #FFF;
+    border-radius: 50%; /* Bikin jadi bulet */
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan biar pop-up */
+    z-index: 1000; /* Biar selalu paling depan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-fab:hover {
+    transform: scale(1.1); /* Efek membesar pas disentuh mouse */
+}
+
+/* Atur ukuran ikon SVG di dalem tombol */
+.whatsapp-fab svg {
+    width: 32px;
+    height: 32px;
+}
