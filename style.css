@@ -316,14 +316,16 @@ footer {
 .payment-logos {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* INI KUNCINYA! Bikin semua logo sejajar di tengah */
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
 }
 
 .payment-logos img {
-    height: 25px;
+    height: 25px; /* SEMUA logo dipaksa punya tinggi 25px */
+    width: auto;  /* Lebar akan menyesuaikan otomatis biar gak gepeng */
+    /* Hapus filter grayscale jika kamu mau logonya berwarna */
 }
 
 .copyright {
