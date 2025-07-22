@@ -72,8 +72,8 @@ nav {
 }
 
 .logo img {
-    width: 180px; /* Ukuran logo di navbar atas */
-    height: auto; 
+    height: 50px;
+    width: auto;
     display: block;
 }
 
@@ -248,8 +248,7 @@ footer {
 }
 
 .footer-logo {
-    width: 250px; /* INI DIA UKURAN LOGO VE DI FOOTER */
-    height: auto;
+    height: 40px;
     margin-bottom: 15px;
 }
 
@@ -324,7 +323,7 @@ footer {
 }
 
 .payment-logos img {
-    height: 25px; /* LOGO PEMBAYARAN TETAP KECIL */
+    height: 25px;
     filter: grayscale(100%);
     opacity: 0.6;
 }
@@ -342,10 +341,6 @@ footer {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
     section { padding: 60px 0; }
-    
-    .logo img {
-        width: 150px; /* Perkecil logo navbar di mobile */
-    }
 
     /* Mobile Menu */
     .nav-links {
