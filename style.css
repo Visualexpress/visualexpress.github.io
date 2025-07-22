@@ -323,7 +323,7 @@ footer {
 }
 
 .payment-logos img {
-    height: 60px; /* SEMUA logo dipaksa punya tinggi 25px */
+    height: 75px; /* SEMUA logo dipaksa punya tinggi 25px */
     width: auto;  /* Lebar akan menyesuaikan otomatis biar gak gepeng */
     /* Hapus filter grayscale jika kamu mau logonya berwarna */
 }
