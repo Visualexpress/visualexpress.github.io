@@ -112,7 +112,7 @@
                 <div class="footer-col">
                     <h3>Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="https://www.instagram.com/visualexpressid/" target="_blank" rel="noopener noreferrer">Testimonial</a></li>
                         <li><a href="#">F.A.Q</a></li>
                         <li><a href="#">Promo</a></li>
                         <li><a href="#">Kebijakan Layanan</a></li>
@@ -156,7 +156,46 @@
     </a>
 
     <script>
-       // ... (Script kamu biarkan sama) ...
+        // Script untuk counter angka
+        const counters = document.querySelectorAll('.counter');
+        const statsSection = document.querySelector('#stats');
+
+        const startCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            let current = 0;
+            const increment = target / 150; // Kecepatan counter
+
+            const updateCounter = () => {
+                if (current < target) {
+                    current += increment;
+                    counter.innerText = Math.ceil(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCounter();
+        };
+
+        if (statsSection) {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        counters.forEach(startCounter);
+                        observer.unobserve(entry.target); // Hanya jalankan sekali
+                    }
+                });
+            }, { threshold: 0.5 }); 
+            observer.observe(statsSection);
+        }
+
+        // Script buat menu di mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
