@@ -72,7 +72,7 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 250px;
     width: auto;
     display: block;
 }
@@ -254,9 +254,9 @@ footer {
 }
 
 .footer-logo {
-    width: 250px;
+    width: 150px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .footer-about {
@@ -330,7 +330,7 @@ footer {
 }
 
 .payment-logos img {
-    height: 35px;
+    height: 80px;
     width: auto;
 }
 
