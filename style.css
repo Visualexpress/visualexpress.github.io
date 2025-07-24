@@ -1,6 +1,6 @@
 /* ===== GENERAL & SETUP ===== */
 :root {
-    --primary-color: #007BFF; /* Warna biru utama */
+    --primary-color: #037AFE; /* Warna biru utama */
     --secondary-color: #1E1E1E;
     --bg-color: #FFFFFF;
     --card-bg-color: #FFFFFF;
@@ -72,7 +72,7 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 250px;
     width: auto;
     display: block;
 }
@@ -94,8 +94,8 @@ nav {
 .nav-links a:hover { color: var(--primary-color); }
 
 .contact-button {
-    background-color: var(--secondary-color);
-    color: var(--bg-color) !important;
+    background-color: #037AFE(--secondary-color);
+    color: #FFFFFF(--bg-color) !important;
     border-radius: 50px;
     font-weight: bold;
     padding: 10px 20px !important;
@@ -123,8 +123,8 @@ nav {
 .hero-image { flex: 1; max-width: 45%; }
 
 .cta-button {
-    background-color: #037AFE(--primary-color); /* DIUBAH JADI BIRU */
-    color: #FFFFFF !important; /* Pastiin warnanya jadi putih */
+    background-color: var(--primary-color);
+    color: #FFFFFF !important;
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -254,9 +254,9 @@ footer {
 }
 
 .footer-logo {
-    width: 250px;
+    width: 150px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
 }
 
 .footer-about {
@@ -330,7 +330,7 @@ footer {
 }
 
 .payment-logos img {
-    height: 35px;
+    height: 80px;
     width: auto;
 }
 
