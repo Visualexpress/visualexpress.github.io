@@ -94,7 +94,7 @@ nav {
 .nav-links a:hover { color: var(--primary-color); }
 
 .contact-button {
-    background-color: var(--secondary-color);
+    background-color: #037AFE(--secondary-color);
     color: #FFFFFF(--bg-color) !important;
     border-radius: 50px;
     font-weight: bold;
