@@ -72,7 +72,7 @@ nav {
 }
 
 .logo img {
-    height: 250px;
+    height: 50px;
     width: auto;
     display: block;
 }
@@ -94,8 +94,8 @@ nav {
 .nav-links a:hover { color: var(--primary-color); }
 
 .contact-button {
-    background-color: #037AFE(--secondary-color);
-    color: #FFFFFF(--bg-color) !important;
+    background-color: var(--secondary-color);
+    color: var(--bg-color) !important;
     border-radius: 50px;
     font-weight: bold;
     padding: 10px 20px !important;
@@ -124,7 +124,7 @@ nav {
 
 .cta-button {
     background-color: #037AFE(--primary-color); /* DIUBAH JADI BIRU */
-    color: #FFFFFF; /* DIUBAH JADI PUTIH */
+    color: #FFFFFF !important; /* Pastiin warnanya jadi putih */
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -254,9 +254,9 @@ footer {
 }
 
 .footer-logo {
-    width: 125px;
+    width: 250px;
     height: auto;
-    margin-bottom: 1px;
+    margin-bottom: 15px;
 }
 
 .footer-about {
@@ -330,7 +330,7 @@ footer {
 }
 
 .payment-logos img {
-    height: 80px;
+    height: 35px;
     width: auto;
 }
 
