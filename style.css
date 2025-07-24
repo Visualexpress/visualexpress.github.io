@@ -123,7 +123,7 @@ nav {
 .hero-image { flex: 1; max-width: 45%; }
 
 .cta-button {
-    background-color: var(--primary-color);
+    background-color: #037AFE(--primary-color); /* DIUBAH JADI BIRU */
     color: #FFFFFF; /* DIUBAH JADI PUTIH */
     padding: 15px 30px;
     text-decoration: none;
