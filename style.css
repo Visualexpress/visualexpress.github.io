@@ -95,7 +95,7 @@ nav {
 
 .contact-button {
     background-color: var(--secondary-color);
-    color: var(--bg-color) !important;
+    color: #FFFFFF(--bg-color) !important;
     border-radius: 50px;
     font-weight: bold;
     padding: 10px 20px !important;
